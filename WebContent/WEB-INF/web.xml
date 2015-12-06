@@ -12,12 +12,18 @@
   </welcome-file-list>
   
   <servlet>
-		<servlet-name>MyTubeVideoUploader</servlet-name>
+		<servlet-name>VideoUploader</servlet-name>
 		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
+	
+	
+	
 	<servlet-mapping>
-		<servlet-name>MyTubeVideoUploader</servlet-name>
-		<url-pattern>/mytuberest/*</url-pattern>
+		<servlet-name>VideoUploader</servlet-name>
+		<url-pattern>/rest/*</url-pattern>
 	</servlet-mapping>
+	
+	
+	
 </web-app>

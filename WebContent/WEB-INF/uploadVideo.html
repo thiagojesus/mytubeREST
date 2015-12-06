@@ -5,12 +5,18 @@
 <title>MyTube Video Manager</title>
 </head>
 <body>
-	<form action="http://localhost:8080/MyTubeREST/uploadvideo/upload" method="post">
+	<form action="http://localhost:8080/MyTubeREST/rest/uploadvideo/upload" method="post" enctype="multipart/form-data">
 		<label for="file">Select video to be uploaded</label>
 		<input type="file" name="file"> <br>
 		<label for="descricao">Type a short description</label>
 		<input type="text" name="descricao"> <br>
 		<input type="submit" value="upload">
+	</form>
+	
+	<form action="http://localhost:8080/MyTubeREST/rest/uploadvideo/download" method="post">
+		<label for="download">Enter video ID to download</label>
+		<input type="text" name="download">
+		<input type="submit" value="download">
 	</form>
 </body>
 </html>
